@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 /* ____________________________________________ */
 /** main colors **/
 :root {
@@ -10,24 +11,30 @@
   --orange: #fe8a02;
   --grey: #908d8b;
   --dark-grey: #2a2626;
-  
-  --link-hover:#3c5b8a;
 
-  --background-light: #f5f4f0;
-  --background-dark: #b09a81;
-  --background-very-dark: #3c3e42;
+  --link-hover: #3c5b8a;
+
+  /* bg colors */
+
+  /* --background-light: #f5f4f0; */
+  /* --background-very-dark: #3c3e42; */
+  /* --background-dark: #b09a81; */
+  --white-light: #f5f4f0;
+  --dark: #b09a81;
+  --very-dark: #3c3e42;
 }
+
 /* end main colors */
 /* ___________________________________________ */
 /** fonts **/
 @font-face {
   font-family: "Neucha";
-  src: url(../fonts/Neucha-Regular.ttf);
+  src: url(fonts/Neucha-Regular.ttf);
 }
 
 @font-face {
   font-family: "Open Sans";
-  src: url(../fonts/OpenSans-Regular.ttf);
+  src: url(fonts/OpenSans-Regular.ttf);
 }
 
 /* end fonts */
@@ -71,6 +78,7 @@ h4,
   font-family: "Neucha", sans-serif;
   line-height: 1.2em;
 }
+
 /* end /** headers h1 h2 h3 h4 h5 h6 **/
 /* _______________________________________________________ */
 
@@ -86,6 +94,7 @@ h4,
 .font-size-54 {
   font-size: 54px;
 }
+
 /* end for new reset fz */
 
 /*main style  */
@@ -99,7 +108,8 @@ body {
 a {
   text-decoration: none;
   display: block;
-} 
+}
+
 /* end main style */
 /* _______________________________________________________ */
 
@@ -128,6 +138,7 @@ main {
 .text-align-left {
   text-align: left;
 }
+
 /* ____________________________________ */
 /* z index */
 .z-index-250 {
@@ -137,6 +148,7 @@ main {
 .z-index-100 {
   z-index: 100;
 }
+
 /* end z index */
 /* __________________________________ */
 /* paddings */
@@ -147,6 +159,7 @@ main {
 .pt-200 {
   padding-top: 200px;
 }
+
 /* end paddings */
 /* _____________________________________ */
 
@@ -154,9 +167,11 @@ main {
 .mt-5 {
   margin-top: 5px;
 }
+
 .ml-5 {
   margin-left: 5px;
 }
+
 .mt-10 {
   margin-top: 10px;
 }
@@ -192,6 +207,7 @@ main {
 .mt-190 {
   margin-top: 190px;
 }
+
 /* end margins */
 
 /* ____________________________________________ */
@@ -215,6 +231,7 @@ main {
 .font-color-black {
   color: var(--black);
 }
+
 /* end font colors */
 
 /* ____________________________________ */
@@ -229,15 +246,15 @@ main {
 }
 
 .bg-light {
-  background: var(--background-light);
+  background: var(--white-light);
 }
 
 .bg-dark {
-  background: var(--background-dark);
+  background: var(--dark);
 }
 
 .bg-very-dark {
-  background: var(--background-very-dark);
+  background: var(--very-dark);
 }
 
 /* end background colors */
@@ -255,11 +272,12 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url(../images/background.png);
+  background: url(images/background.png);
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 10%;
 }
+
 /* end bg template + before */
 /* ________________________________ */
 
@@ -278,19 +296,21 @@ main {
   text-align: center;
   text-transform: uppercase;
   width: 110px;
-  height: 25px;
+  /* height: 25px; */
+  word-break: break-all;
   margin-top: 35px;
   padding: 12px 24px 12px 24px;
   border: solid 1px var(--orange);
 }
 
 .header-button:hover {
-transition: 0.5s;
-color: var(--orange);
-background: var(--white);
-border: solid 1px var(--orange);
+  transition: 0.5s;
+  color: var(--orange);
+  background: var(--white);
+  border: solid 1px var(--orange);
 
 }
+
 /* end header */
 
 
@@ -303,6 +323,7 @@ border: solid 1px var(--orange);
   border: none;
   filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
+
 /* end main */
 
 /* main nav */
@@ -331,6 +352,7 @@ nav {
 .animation:hover span {
   color: var(--white);
 }
+
 /* end nav */
 
 /* section */
@@ -353,6 +375,7 @@ section {
   padding-bottom: 2px;
   padding-left: 12px;
 }
+
 /* end section */
 
 
@@ -395,15 +418,16 @@ section {
 }
 
 .footer-button:hover {
-background: #f59d39;
-transition: 0.5s;
+  background: #f59d39;
+  transition: 0.5s;
 }
+
 .footer-button::before {
   content: "";
   width: 30px;
   height: 30px;
   margin: 0 auto;
-  background: url(../images/send.svg);
+  background: url(images/send.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -423,13 +447,20 @@ transition: 0.5s;
 .link-decoration-underline {
   text-decoration: underline;
 }
+
 .link-decoration-underline:hover {
   transition: 0.5s;
   color: var(--link-hover);
-  
+
 }
+
 .flex-center {
   display: flex;
   justify-content: center;
 }
+
+.servises {
+  width: 115px;
+}
+
 /* end footer */
